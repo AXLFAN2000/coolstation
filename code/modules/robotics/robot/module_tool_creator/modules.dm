@@ -135,6 +135,7 @@
 /datum/robot/module_tool_creator/recursive/module/medical
 	definitions = list(
 		/obj/item/robodefibrillator,
+		/obj/item/tool/surgery_omnitool/silicon,
 		/obj/item/scalpel,
 		/obj/item/circular_saw,
 		/obj/item/surgical_spoon,
