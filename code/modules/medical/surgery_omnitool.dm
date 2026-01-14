@@ -44,16 +44,16 @@ CONTAINS:
 		if (src.omni_mode == "scalpel")
 			if (!scalpel_surgery(M, user))
 				return ..()
-		if (src.omni_mode == "saw")
+		else if (src.omni_mode == "saw")
 			if (!saw_surgery(M, user))
 				return ..()
-		if (src.omni_mode == "spoon")
+		else if (src.omni_mode == "spoon")
 			if (!spoon_surgery(M, user))
 				return ..()
-		if (src.omni_mode == "scissors")
+		else if (src.omni_mode == "scissors")
 			if (!snip_surgery(M, user))
 				return ..()
-		if (src.omni_mode == "hemostat")
+		else if (src.omni_mode == "hemostat")
 			if (!ishuman(M))
 				if (user.a_intent == INTENT_HELP)
 					return
@@ -84,11 +84,11 @@ CONTAINS:
 
 				if (H.bleeding)
 					repair_bleeding_damage(H, 50, rand(2,5))
-				return
+					return
 
 				return ..()
 
-		if (src.omni_mode == "suture")
+		else if (src.omni_mode == "suture")
 			if (!suture_surgery(M, user))
 				return ..()
 		else
